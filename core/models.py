@@ -46,7 +46,7 @@ class Cargo(Base):
         return self.cargo
 
 
-class Equipe(Base):
+class Funcionario(Base):
     nome = models.CharField('Nome', max_length=100)
     cargo = models.ForeignKey('core.Cargo', verbose_name='Cargo', on_delete=models.CASCADE)
     bio = models.TextField('Bio', max_length=200)
