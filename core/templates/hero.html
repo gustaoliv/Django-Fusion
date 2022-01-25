@@ -22,5 +22,14 @@
     </div> 
 </div>
 
+<div class="container">
+  {% for m in messages %}
+    <div class="alert alert-{{m.tags}}">
+      <button type="button" class="close" data-dismiss="alert"></button>
+      <strong>{{m}}</strong>
+    </div>
+  {% endfor %}
+</div>
+
 </header>
 <!-- Header Area wrapper End -->
